@@ -1,0 +1,86 @@
+.food-detail {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.food-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.food-cost {
+  font-size: 1.2rem;
+  color: #ff4f5a;
+}
+
+.food-description {
+  margin: 10px 0 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.add-to-cart-btn {
+  padding: 12px 24px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  
+
+}
+.cart-message{
+  color:white;
+    font-weight: bold;
+    margin-top: 15px;
+    padding:10px;
+    background-color: green;
+}
+.favorite-button {
+  background-color: #ff4081; /* Primary color for favorite action */
+  color: white;
+  border: none;
+  padding: 20px 50px 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.favorite-button:hover {
+  background-color: #e73370; /* Slightly darker shade on hover */
+  transform: scale(1.05); /* Enlarge slightly */
+}
+
+.favorite-button:active {
+  background-color: #d62966; /* Even darker shade for active */
+  transform: scale(0.95); /* Slightly shrink on click */
+}
+
+.favorite-button::after {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.favorite-button:hover::after {
+  transform: scale(1.2);
+}
+.fav-message{
+  color:white;
+    font-weight: bold;
+    margin-top: 15px;
+    padding:10px;
+    background-color: #d62966;
+}

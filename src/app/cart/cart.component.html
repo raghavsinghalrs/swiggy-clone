@@ -1,0 +1,57 @@
+<!-- 
+<div class="cart-page">
+    <h2>Cart</h2>
+    <div *ngFor="let item of cartItems" class="cart-item">
+      <img [src]="item.image" alt="{{ item.name }}" />
+      <div>
+        <h3>{{ item.name }}</h3>
+        <p>Price: {{ item.price | currency }}</p>
+        <p>Quantity: {{ item.quantity }}</p>
+      </div>
+    </div>
+    <div class="total-cost">
+      <h3>Total Cost: {{ totalCost | currency }}</h3>
+    </div>
+  </div>
+   -->
+
+   <!-- src/app/cart/cart.component.html -->
+<!-- <section class="cart">
+    <h2>Your Cart</h2>
+    <div *ngIf="cartItems.length > 0; else emptyCart">
+      <div *ngFor="let item of cartItems" class="cart-item">
+        <p>{{ item.name }} - ₹{{ item.cost }}</p>
+      </div>
+      <h3>Total Cost: ₹{{ totalCost }}</h3>
+      <button (click)="clearCart()">Clear Cart</button>
+    </div>
+    <ng-template #emptyCart>
+      <p>Your cart is empty.</p>
+    </ng-template>
+  </section> -->
+  
+  <!-- <div class="cart">
+    <h2>Your Cart</h2>
+    <div *ngIf="cartItems.length === 0">Your cart is empty.</div>
+    <div *ngFor="let item of cartItems" class="cart-item">
+      <h3>{{ item.name }}</h3>
+      <p>Cost: ₹{{ item.cost }}</p>
+    </div>
+    <h3>Total Cost: ₹{{ totalCost }}</h3>
+  </div> -->
+  
+  <div *ngIf="cartItems.length > 0" class="cart">
+    <h2>Your Cart</h2>
+    <div *ngFor="let item of cartItems" class="cart-item">
+      <img [src]="item.image" alt="{{ item.name }}" class="cart-item-image" />
+      <div class="cart-item-details">
+        <h3>{{ item.name }}</h3>
+        <p>Cost: ₹{{ item.cost }}</p>
+      </div>
+    </div>
+    <h3>Total Cost: ₹{{ totalCost }}</h3>
+  </div>
+  <div *ngIf="cartItems.length === 0">
+    <p><strong>cart is empty.<br>please add something</strong> </p>
+  </div>
+  

@@ -1,0 +1,37 @@
+.restaurants {
+    text-align: center;
+    margin: 30px;
+    padding: 0 80px;
+  }
+  
+  .restaurant-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .restaurant-card {
+    width: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .restaurant-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .details {
+    padding: 10px;
+  }
+  
+  .details h3 {
+    margin: 10px 0;
+    font-size: 1.1em;
+  }
+  

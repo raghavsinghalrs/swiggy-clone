@@ -1,0 +1,19 @@
+<h2>Search Items</h2>
+<input type="text" placeholder="Search items or restaurants..." (input)="onSearch($event)" />
+
+<ul>
+  <li *ngFor="let item of filteredItems">
+    <ng-container *ngIf="item.type === 'food'">
+      <a [routerLink]="['/food', item.name]" class="item-link">
+        <img [src]="item.image" alt="{{ item.name }}" width="100" height="100" />
+        <span>{{ item.name }} (Food)</span>
+      </a>
+    </ng-container>
+    <ng-container *ngIf="item.type === 'restaurant'">
+      <div class="restaurant-card" *ngIf="item.id" (click)="goToRestaurantDetail(item.id)">
+        <img [src]="item.image" alt="{{ item.name }}" width="100" height="100" />
+        <span>{{ item.name }} (Restaurant)</span>
+      </div>
+    </ng-container>
+  </li>
+</ul>

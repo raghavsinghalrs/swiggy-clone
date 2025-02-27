@@ -1,0 +1,42 @@
+.favorite-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .favorite-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .favorite-description {
+    width: 60%;
+  }
+  
+  .favorite-image img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .favorite-footer {
+    text-align: right;
+  }
+  
+  .remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .remove-btn:hover {
+    background-color: darkred;
+  }
+  

@@ -1,0 +1,12 @@
+<section class="mind">
+    <h2>What's on your mind?</h2>
+    <div class="food-options">
+      <div class="food-item" *ngFor="let food of foods">
+        <a [routerLink]="['/food', food.name]">
+          <img [src]="food.image" alt="{{ food.name }}" class="food-image">
+          <h2>{{ food.name }}</h2>
+        </a>
+      </div>
+    </div>
+  </section>
+  

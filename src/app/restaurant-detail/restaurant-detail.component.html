@@ -1,0 +1,35 @@
+
+  <div *ngIf="restaurant" class="restaurant-detail">
+    <h1>{{ restaurant.name }}</h1>
+    
+    
+    <div class="tab-menu">
+        <button class="tab active">Order Online</button>
+    </div>
+  
+    <div class="restaurant-info">
+        <p>
+            <span>{{ restaurant.rating }}</span> • {{ restaurant.cost }} for two
+        </p>
+        <p>{{ restaurant.cuisine }}</p>
+        <p><strong>Outlet:</strong> {{ restaurant.location }}</p>
+        <p>Delivery Time: {{ restaurant.deliveryTime }} mins</p>
+    </div>
+    <h2>Menu</h2>
+    <div class="menu-items">
+      <div class="menu-item" *ngFor="let item of menuItems; let i = index">
+        <img [src]="item.image" alt="{{ item.name }}" class="menu-image" />
+        <div class="menu-details">
+          <h3>{{ item.name }}</h3>
+          <p>Cost: ₹{{ item.cost }}</p>
+          <p>{{ item.description }}</p>
+
+          <button (click)="addToCart(item, i)" class="add-button">Add to Cart</button>
+          <p *ngIf="messages[i]" class="success-message">{{ messages[i] }}</p>
+          <button class="favorite-button" (click)="addToFavorites(item, i)">Add to Favorites ❤️</button>
+<p *ngIf="favoriteMessage" class="fav-message">{{ favoriteMessage[i] }} </p>
+        </div>
+      </div>
+    </div>
+  
+</div>

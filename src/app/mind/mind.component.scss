@@ -1,0 +1,27 @@
+.mind {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .food-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  
+  .food-item {
+    text-align: center;
+  }
+  
+  .food-item img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+  }
+  
+  .food-item p {
+    margin-top: 8px;
+    font-weight: bold;
+  }
+  

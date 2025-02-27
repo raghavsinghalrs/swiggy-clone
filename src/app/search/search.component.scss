@@ -1,0 +1,67 @@
+/* Center and style the main search container */
+.search-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style for the search input */
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #007BFF; /* Change this color as needed */
+  }
+  
+  /* Style the item list */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Each list item styled as a card */
+  li {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+  }
+  
+  li:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  /* Style for images */
+  img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Style for the item name text */
+  span {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+  }
+  

@@ -1,0 +1,16 @@
+<h2>Your Favorites</h2>
+<div *ngFor="let item of favorites" class="favorite-item">
+  <div class="favorite-content">
+    <div class="favorite-description">
+      <h3>{{ item.name }}</h3>
+      <p>{{ item.description }}</p>
+      <p>₹{{item.cost}}</p>
+    </div>
+    <div class="favorite-image">
+      <img [src]="item.image" alt="{{ item.name }}" />
+    </div>
+  </div>
+  <div class="favorite-footer">
+    <button (click)="removeFromFavorites(item)" class="remove-btn">Remove</button>
+  </div>
+</div>
